@@ -11,9 +11,25 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          {/* Favicons, Google site verification and other common meta tags across the site. */}
+          <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
+          <header className="sticky top-0 z-50 p-8">
+            <div className="flex justify-between">
+              <a href="/">Mazarine</a>
+              <div className="flex space-x-4 right-0">
+                <a href="/work" className="block px-3">
+                  Work
+                </a>
+                <a href="/about" className="block px-3">
+                  About
+                </a>
+                <a href="/contact" className="block px-3">
+                  Contact
+                </a>
+              </div>
+            </div>
+          </header>
           <Main />
           <NextScript />
         </body>
