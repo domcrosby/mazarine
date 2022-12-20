@@ -5,7 +5,14 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: ["acumin-pro", "Arial", "sans-serif"],
+    },
   },
   variants: {},
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/forms"),
+    // ...
+  ],
 };

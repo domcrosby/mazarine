@@ -13,25 +13,20 @@ class MyDocument extends Document {
         <Head>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <body>
-          <header className="sticky top-0 z-50 p-8">
-            <div className="flex justify-between">
-              <a href="/">Mazarine</a>
-              <div className="flex space-x-4 right-0">
-                <a href="/work" className="block px-3">
-                  Work
-                </a>
-                <a href="/about" className="block px-3">
-                  About
-                </a>
-                <a href="/contact" className="block px-3">
-                  Contact
-                </a>
-              </div>
-            </div>
-          </header>
-          <Main />
+        <body className="relative min-h-screen">
+          <div className="pb-32">
+            <Main />
+          </div>
+
           <NextScript />
+          <footer className="z-50 p-8 bg-blue-900 absolute h-32 bottom-0 w-screen">
+            <div className="flex justify-between items-center">
+              <p className="text-3xl font-light text-slate-50">Mazarine</p>
+              <p className="flex space-x-4 right-0 text-slate-50">
+                Made by hand
+              </p>
+            </div>
+          </footer>
         </body>
       </Html>
     );
